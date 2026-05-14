@@ -11,7 +11,7 @@ import React from 'react'
 import { LuArrowDownRight, LuCheck, LuShieldCheck, LuRefreshCw, LuUsers } from 'react-icons/lu'
 import Image from 'next/image';
 import Link from 'next/link';
-import Footer from '../components/footer';
+import Footer from '../../components/footer';
 
 const About = () => {
     return (

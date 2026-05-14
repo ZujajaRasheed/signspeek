@@ -1,4 +1,4 @@
-import HeaderWrapper from "./components/headerWrapper";
+import HeaderWrapper from "../components/headerWrapper";
 
 export default function RootLayout({ children }) {
   return (

@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Footer from "./components/footer";
+import Footer from "../components/footer";
 import { LuArrowDownRight } from "react-icons/lu";
 
 export default function Home() {

@@ -1,5 +1,5 @@
 'use client'
-import speakText from "@/app/components/speakerButton";
+import speakText from "@/components/speakerButton";
 import { MdVolumeUp } from "react-icons/md"
 
 export default function FinalSentence({finalSentence,clearAll}){
