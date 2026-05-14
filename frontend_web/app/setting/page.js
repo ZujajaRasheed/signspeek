@@ -34,9 +34,9 @@
 
 
 // frontend_web/app/settings/page.js
-import Footer from "../components/footer";
+import Footer from "@/components/footer";
 // import PrivateHeader from "../components/privateHeader";
-import SettingsForm from "../components/SettingForm";
+import SettingsForm from "@/components/SettingForm";
 
 
 

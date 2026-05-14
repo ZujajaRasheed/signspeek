@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from ".. /components/footer";
+import Footer from "@/components/footer";
 import Image from "next/image";
 import { useState } from "react";
 import { FaGlobe } from "react-icons/fa"; // Globe for English

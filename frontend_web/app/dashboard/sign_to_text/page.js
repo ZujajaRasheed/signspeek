@@ -1,8 +1,10 @@
 "use client";
-import CameraFeed from ".../components/cameraFeed";
-import LiveTextBox from ".../components/liveTextBox";     
-import FinalSentence from ".../components/finalSentence";
-import Footer from ".../components/footer";
+
+
+import Footer from "@/components/footer";
+import CameraFeed from "@/components/cameraFeed";
+import LiveTextBox from "@/components/liveTextBox";
+import FinalSentence from "@/components/finalSentence";
 import { LuCheck } from "react-icons/lu";
 import { useSearchParams } from "next/navigation";
 import {useState} from "react";
