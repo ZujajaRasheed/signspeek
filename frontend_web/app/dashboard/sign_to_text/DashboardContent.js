@@ -10,7 +10,7 @@ import { useSearchParams } from "next/navigation";
 import {useState} from "react";
 import Image from "next/image";
 
-// import PrivateHeader from ".../components/privateHeader";
+import PrivateHeader from "@/components/privateHeader";
 
 export default function SignToTextPage() {  
 
@@ -49,7 +49,7 @@ return(
   style={{ backgroundImage: "url('/setting.png')" }}
 >
   {/* Header */}
-  {/* <PrivateHeader dashboard="sign_to_text" /> */}
+  <PrivateHeader  />
 
   {/* Main content */}
   <div className="flex-1 container mx-auto py-6 px-4 shadow-lg rounded-lg bg-white/40 mt-7 mb-7 ">

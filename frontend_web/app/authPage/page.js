@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation"; // correct for App Router
-
+import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -150,6 +151,16 @@ async function handleSignup(e) {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
             <div className="relative w-full max-w-4xl h-[550px] bg-white rounded-3xl overflow-hidden shadow-2xl flex">
+                <Link href="/" className="absolute top-4 left-4 z-50">
+  <Image
+    src="/logoo.png"
+    alt="Logo"
+    width={90}
+    height={90}
+    className="object-contain"
+    priority
+  />
+</Link>
 
                 {/* LOGIN FORM */}
                 <div className="w-1/2 flex items-center justify-center p-10">

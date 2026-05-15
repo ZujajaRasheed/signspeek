@@ -1,10 +1,9 @@
-import HeaderWrapper from "../components/headerWrapper";
+import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="en">
       <body>
-        <HeaderWrapper />
         {children}
       </body>
     </html>

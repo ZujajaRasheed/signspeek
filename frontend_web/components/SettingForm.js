@@ -27,23 +27,27 @@ export default function SettingsForm()
 
 
     // Load user info
-  useEffect(() => {
-    async function fetchSettings() {
-      const res = await fetch("/api/get-user-settings");
-      const data = await res.json();
-  
-      setUsername(data.name);
-      setEmail(data.email);
-      setGender(data.gender); // comes from signup
-      setUserMode(data.mode || "");
-      setLanguage(data.language || "");
-    
-    //  setAvatar(data.avatar_url || null);
-    }
-    fetchSettings();
-  }, []);
+ useEffect(() => {
+  async function fetchSettings() {
+    const res = await fetch("/api/get-user-settings", {
+      credentials: "include",
+    });
 
-  
+    const data = await res.json();
+    console.log(data);
+
+    const user = data.user || data;
+
+    setUsername(user.name || "");
+    setEmail(user.email || "");
+    setGender(user.gender || "");
+    setUserMode(user.mode || "");
+    setLanguage(user.language || "");
+  }
+
+  fetchSettings();
+}, []);
+
    
 
 

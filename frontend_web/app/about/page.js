@@ -11,12 +11,16 @@ import React from 'react'
 import { LuArrowDownRight, LuCheck, LuShieldCheck, LuRefreshCw, LuUsers } from 'react-icons/lu'
 import Image from 'next/image';
 import Link from 'next/link';
-import Footer from '../../components/footer';
+import Footer from '@/components/footer';
+import PrivateHeader from '@/components/privateHeader';
 
 const About = () => {
     return (
         <div className="min-h-screen flex flex-col">
               {/* <PrivateHeader dashboard="/dashboard/sign_to_text" /> */}
+              <PrivateHeader />
+
+              {/* MAIN Section with Background Image */}
             
             {/* MAIN CONTENT */}
             <div className="flex-grow">
