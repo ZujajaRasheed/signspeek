@@ -44,8 +44,8 @@ export async function POST(req) {
 
     return response;
   } catch (err) {
-    return NextResponse.json(
-      { message: "Server error" },
+   return NextResponse.json(
+      { message: err.message, stack: err.stack }, // This will tell you EXACTLY what failed
       { status: 500 }
     );
   }
